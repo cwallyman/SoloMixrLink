@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOLO MIXR — Support &amp; Privacy</title>
+<style>
+  :root {
+    --bg: #111214;
+    --panel: #1b1d20;
+    --border: #2b2e33;
+    --text: #d7dadf;
+    --muted: #8b909a;
+    --accent: #5ec3ee;
+    --green: #3ecb6e;
+    --yellow: #f0c419;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+  }
+  .app-name {
+    font-size: 13px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 8px;
+    letter-spacing: -0.01em;
+  }
+  .sub { color: var(--muted); font-size: 15px; margin-top: 8px; }
+  nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  nav a {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+  }
+  nav a:hover { border-color: var(--accent); color: #fff; text-decoration: none; }
+  .contact {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 44px;
+    font-size: 15px;
+  }
+  .contact strong, .tldr strong { color: #fff; }
+  .section-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+    margin: 64px 0 8px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    letter-spacing: -0.01em;
+  }
+  .section-title:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
+  h2 {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+    margin: 36px 0 16px;
+  }
+  details {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  summary {
+    cursor: pointer;
+    padding: 14px 18px;
+    font-weight: 600;
+    color: #fff;
+    list-style: none;
+    position: relative;
+    padding-right: 44px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 20px;
+    font-weight: 400;
+  }
+  details[open] summary::after { content: "–"; }
+  details p {
+    padding: 0 18px 16px;
+    color: var(--text);
+    font-size: 15px;
+  }
+  details p + p { padding-top: 0; margin-top: -6px; }
+  .tldr {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 16px 0 36px;
+    font-size: 15px;
+  }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 32px 0 10px;
+  }
+  h3::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background: var(--accent);
+    margin-right: 10px;
+  }
+  h3:nth-of-type(even)::before { background: var(--yellow); }
+  p { margin-bottom: 14px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
+<header>
+  <div class="app-name">Solo Mixr</div>
+  <h1>Support &amp; Privacy</h1>
+  <div class="sub">Help with setup, audio, tones, and playback — and how your data is handled.</div>
+  <nav>
+    <a href="#support">Support</a>
+    <a href="#privacy">Privacy Policy</a>
+  </nav>
+</header>
+
+<!-- ============ SUPPORT ============ -->
+<div class="section-title" id="support">Support</div>
+
+<div class="contact" style="margin-top:16px;">
+  <strong>Need help or found a bug?</strong> Email <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a> with your device model, iOS version, and a short description of what happened. We typically reply within 1–2 business days.
+</div>
+
+<h2>Getting started</h2>
+
+<details>
+  <summary>I don't hear anything — where's my sound?</summary>
+  <p>Check three things: (1) the Master channel output is set to the device you're actually listening on, (2) the channel fader is up and the channel isn't muted (the red M button), and (3) monitoring is running — tap the red STOP/start control at the top to toggle the audio engine.</p>
+  <p>Also make sure your iPhone's ring/silent switch and volume are up.</p>
+</details>
+
+<details>
+  <summary>How do I connect my guitar?</summary>
+  <p>You'll need an audio interface or guitar-to-Lightning/USB-C adapter (e.g. iRig, Apogee Jam, or any class-compliant interface). Plug in, then select it as the input on the NAM channel. The channel strip shows the active input under the channel name.</p>
+</details>
+
+<details>
+  <summary>What do the M, S, and ST buttons do?</summary>
+  <p>M mutes the channel, S solos it (silences everything else), and ST toggles stereo/mono routing for that channel.</p>
+</details>
+
+<h2>Tones &amp; impulse responses</h2>
+
+<details>
+  <summary>How do I get more amp tones?</summary>
+  <p>The app loads Neural Amp Modeler (NAM) profiles. You can download thousands of free profiles from TONE3000 directly in the app — no account needed — or import your own .nam files.</p>
+</details>
+
+<details>
+  <summary>Can I load my own cab IRs?</summary>
+  <p>Yes. Import standard WAV impulse responses through the Cab IR section on any channel. Browse them with the folder picker, and use the X button to bypass the IR.</p>
+</details>
+
+<h2>Playing along with music</h2>
+
+<details>
+  <summary>Why can't I play Apple Music streaming songs through the mixer?</summary>
+  <p>Streaming tracks from the Apple Music catalog are DRM-protected, and iOS doesn't allow apps to route them through audio processing. To jam along with a song, import a DRM-free file you own (MP3, M4A, AIFF, or WAV) using Import Track in the music browser.</p>
+</details>
+
+<details>
+  <summary>What audio file formats can I import?</summary>
+  <p>MP3, M4A, AIFF, and WAV.</p>
+</details>
+
+<h2>Audio quality &amp; latency</h2>
+
+<details>
+  <summary>There's a delay between playing and hearing my guitar.</summary>
+  <p>Bluetooth headphones add significant latency by design — for real-time playing, use wired headphones or wired speakers. If you're already wired, try closing other audio apps and reducing the buffer size if your interface supports it.</p>
+</details>
+
+<details>
+  <summary>The sound is crackling or distorting.</summary>
+  <p>First check input gain — if your interface has a gain knob, back it off until the input meter stays out of the red. Crackling can also happen when the device is under heavy load; close background apps, and disable Low Power Mode, which throttles the CPU.</p>
+</details>
+
+<!-- ============ PRIVACY ============ -->
+<div class="section-title" id="privacy">Privacy Policy</div>
+<div class="updated">Last updated: June 11, 2026</div>
+
+<div class="tldr">
+  <strong>The short version:</strong> SOLO MIXR does not collect, store, or share any personal data. There are no accounts, no analytics, no ads, and no tracking. Your audio never leaves your device.
+</div>
+
+<h3>Who we are</h3>
+<p>SOLO MIXR ("the app") is published by [YOUR NAME / COMPANY NAME] ("we", "us"). This policy explains how the app handles information when you use it on your Apple device.</p>
+
+<h3>Data we collect</h3>
+<p>None. The app does not collect, transmit, or store any personal information, usage analytics, identifiers, or diagnostics. The app contains no third-party analytics SDKs, crash reporters, or advertising frameworks.</p>
+
+<h3>Microphone and audio input</h3>
+<p>The app requests access to your device's microphone and audio inputs so it can process live instrument and microphone signals in real time. All audio processing happens entirely on your device. Audio from your inputs is never recorded by the app, never stored, and never transmitted to us or to any third party.</p>
+
+<h3>Music and media library</h3>
+<p>If you choose to play along with songs, the app may request access to your Apple Music library or to audio files you import (MP3, M4A, AIFF, or WAV). This access is used solely to play the audio you select through the mixer on your device. The app does not upload, copy, or share your music or any information about your library.</p>
+
+<h3>Downloaded tone models and impulse responses</h3>
+<p>The app can download publicly available amp models and cabinet impulse responses from TONE3000. These downloads are ordinary network requests made directly from your device to TONE3000's servers; no account is required and the app sends no personal information with these requests. TONE3000's own handling of standard server logs is governed by its privacy policy at <a href="https://www.tone3000.com" target="_blank" rel="noopener">tone3000.com</a>. Downloaded files are stored locally on your device and can be deleted at any time.</p>
+
+<h3>Files you import</h3>
+<p>Presets, impulse responses, NAM models, and audio tracks you import remain on your device. The app does not upload them anywhere.</p>
+
+<h3>Children's privacy</h3>
+<p>The app does not collect data from anyone, including children under 13 (or the equivalent minimum age in your jurisdiction).</p>
+
+<h3>Changes to this policy</h3>
+<p>If a future version of the app changes how data is handled, we will update this policy and revise the date above before that version is released.</p>
+
+<h3>Contact</h3>
+<p>Questions about this policy can be sent to <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>.</p>
+
+<footer>
+  © 2026 Chris Wallace SOLO MIXR is not affiliated with Apple Inc. Apple Music is a trademark of Apple Inc. TONE3000 and Neural Amp Modeler are the property of their respective owners.
+</footer>
+
+</div>
+</body>
+</html>
